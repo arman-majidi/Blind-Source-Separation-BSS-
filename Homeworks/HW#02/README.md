@@ -20,10 +20,10 @@ All parts of both sections are mandatory; no optional or bonus problems were ass
 
 | File | Description |
 | --- | --- |
-| [codes/Section1.m](https://www.google.com/search?q=./codes/Section1.m) | MATLAB script for Section 1 (Parts 1–6): uniform source generation, 3D scatter plot, PCA eigen-decomposition of $R_X$, subspace projection matrix $C$, 2D spatial whitening ($B_{2d}$, $Z_{2d}$), SVD verification, source-to-whitened matrix $F$, and 1D dimensionality reduction ($B_{1d}$, $Z_{1d}$) with energy coverage computation. |
-| [codes/Section2.m](https://www.google.com/search?q=./codes/Section2.m) | MATLAB script for Section 2 (Parts 1–5): $10$-element ULA signal generation in AWGN, SVD signal/null subspace partitioning, spatial DOA estimation via Beamforming and MUSIC, and temporal frequency estimation via Beamforming and MUSIC. |
-| [BSS\_HW#2\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25232_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including 3D/2D scatter plots, whitened time-series waveforms, eigenvalue/SVD numerical matrices, and Beamforming/MUSIC spatial and temporal spectra). |
-| [hw2.pdf](https://www.google.com/search?q=./hw2.pdf) | Original assignment problem sheet in Persian. |
+| [codes/Section1.m](./codes/Section1.m) | MATLAB script for Section 1 (Parts 1–6): uniform source generation, 3D scatter plot, PCA eigen-decomposition of $R_X$, subspace projection matrix $C$, 2D spatial whitening ($B_{2d}$, $Z_{2d}$), SVD verification, source-to-whitened matrix $F$, and 1D dimensionality reduction ($B_{1d}$, $Z_{1d}$) with energy coverage computation. |
+| [codes/Section2.m](./codes/Section2.m) | MATLAB script for Section 2 (Parts 1–5): $10$-element ULA signal generation in AWGN, SVD signal/null subspace partitioning, spatial DOA estimation via Beamforming and MUSIC, and temporal frequency estimation via Beamforming and MUSIC. |
+| [BSS\_HW#2\_810100205\_Arman\_Majidi.pdf](./BSS_HW%232_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including 3D/2D scatter plots, whitened time-series waveforms, eigenvalue/SVD numerical matrices, and Beamforming/MUSIC spatial and temporal spectra). |
+| [hw2.pdf](./hw2.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes` subfolder inside the homework directory.
