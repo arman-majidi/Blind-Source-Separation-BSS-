@@ -1,15 +1,10 @@
 # Homework 6: Sparse Signal Recovery Under Noise (BP, MP, and LASSO), Low-Coherence Frame Design, and Dictionary Learning via MOD & K-SVD
 
-**Course:** Blind Source Separation
-
-**Instructor:** Dr. Saeed Akhavan
-
-**Author:** Arman Majidi
-
-**Student ID:** 810100205
-
-**University:** University of Tehran
-
+**Course:** Blind Source Separation  
+**Instructor:** Dr. Saeed Akhavan  
+**Author:** Arman Majidi  
+**Student ID:** 810100205  
+**University:** University of Tehran  
 **Semester:** Spring 2024-2025
 
 ## 1. Overview & Assignment Structure
