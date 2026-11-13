@@ -1,15 +1,10 @@
 # Homework 7: Single-Channel and Multi-Channel Sparse Blind Deconvolution in Time and Frequency Domains
 
-**Course:** Blind Source Separation
-
-**Instructor:** Dr. Saeed Akhavan
-
-**Author:** Arman Majidi
-
-**Student ID:** 810100205
-
-**University:** University of Tehran
-
+**Course:** Blind Source Separation  
+**Instructor:** Dr. Saeed Akhavan  
+**Author:** Arman Majidi  
+**Student ID:** 810100205  
+**University:** University of Tehran  
 **Semester:** Spring 2024-2025
 
 ## 1. Overview & Assignment Structure
@@ -30,12 +25,12 @@ All four parts of the assignment are mandatory; no optional or bonus problems we
 
 | File | Description |
 | ----- | ----- |
-| [codes/Section1.m](https://www.google.com/search?q=./codes/Section1.m) | Main MATLAB script for Homework 7 (Parts 1–4): time-domain single-channel sparse blind deconvolution on `x1` and `x2`, multi-channel sparse blind deconvolution on the $2 \times 2000$ mixture `X`, and frequency-domain single-channel blind deconvolution on `x1`. |
-| [codes/Single\_Channel\_\_Blind\_Deconvolution.m](https://www.google.com/search?q=./codes/Single_Channel__Blind_Deconvolution.m) | Helper MATLAB function `[s_hat, comb, x_hat] = Single_Channel__Blind_Deconvolution(x, L, K, T, iterNum)` implementing $100$-iteration time-domain alternating minimization for single-channel sparse blind deconvolution. |
-| [codes/Not Used/Frequency\_Normalization.m](https://www.google.com/search?q=./codes/Not%2520Used/Frequency_Normalization.m) | Auxiliary MATLAB function `[signal_normalized_f, norm_sig] = Frequency_Normalization(signal_f)` for normalizing a frequency-domain vector via its time-domain $\ell_2$-norm (retained in `codes/Not Used/` for reference; not called by `Section1.m`). |
-| [codes/hw7.mat](https://www.google.com/search?q=./codes/hw7.mat) | Dataset for Homework 7 containing two noisy single-channel observations `x1` ($1 \times 2000$ double) and `x2` ($1 \times 2000$ double), and one noiseless two-channel mixture matrix `X` ($2 \times 2000$ double). |
-| [BSS\_HW#7\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25237_810100205_Arman_Majidi.pdf) | Submitted report and analytical/simulation solutions in Persian (including mathematical formulations, estimated mixing matrix $\hat{A}$, and Figures 1.1–1.9). |
-| [hw7.pdf](https://www.google.com/search?q=./hw7.pdf) | Original assignment problem sheet in Persian. |
+| [codes/Section1.m](./codes/Section1.m) | Main MATLAB script for Homework 7 (Parts 1–4): time-domain single-channel sparse blind deconvolution on `x1` and `x2`, multi-channel sparse blind deconvolution on the $2 \times 2000$ mixture `X`, and frequency-domain single-channel blind deconvolution on `x1`. |
+| [codes/Single\_Channel\_\_Blind\_Deconvolution.m](./codes/Single_Channel__Blind_Deconvolution.m) | Helper MATLAB function `[s_hat, comb, x_hat] = Single_Channel__Blind_Deconvolution(x, L, K, T, iterNum)` implementing $100$-iteration time-domain alternating minimization for single-channel sparse blind deconvolution. |
+| [codes/Not Used/Frequency\_Normalization.m](./codes/Not%20Used/Frequency_Normalization.m) | Auxiliary MATLAB function `[signal_normalized_f, norm_sig] = Frequency_Normalization(signal_f)` for normalizing a frequency-domain vector via its time-domain $\ell_2$-norm (retained in `codes/Not Used/` for reference; not called by `Section1.m`). |
+| [codes/hw7.mat](./codes/hw7.mat) | Dataset for Homework 7 containing two noisy single-channel observations `x1` ($1 \times 2000$ double) and `x2` ($1 \times 2000$ double), and one noiseless two-channel mixture matrix `X` ($2 \times 2000$ double). |
+| [BSS\_HW#7\_810100205\_Arman\_Majidi.pdf](./BSS_HW%237_810100205_Arman_Majidi.pdf) | Submitted report and analytical/simulation solutions in Persian (including mathematical formulations, estimated mixing matrix $\hat{A}$, and Figures 1.1–1.9). |
+| [hw7.pdf](./hw7.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes` subfolder (and its `codes/Not Used` subdirectory) inside the homework directory.
@@ -458,16 +453,12 @@ alpha =
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical formulations of single-channel time-domain sparse blind deconvolution, multi-channel alternating blind deconvolution, and frequency-domain blind deconvolution.
 
-2. Use **Section 5** to review the quantitative results tables, figure-by-figure discussions, and implementation notes alongside the original Persian report [BSS\_HW#7\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25237_810100205_Arman_Majidi.pdf) and assignment sheet [hw7.pdf](https://www.google.com/search?q=./hw7.pdf).
+2. Use **Section 5** to review the quantitative results tables, figure-by-figure discussions, and implementation notes alongside the original Persian report [BSS\_HW#7\_810100205\_Arman\_Majidi.pdf](./BSS_HW%237_810100205_Arman_Majidi.pdf) and assignment sheet [hw7.pdf](./hw7.pdf).
 
 ## 7. References
 
 1. Akhavan, S. *Blind Source Separation: Homework 7 — Single-Channel and Multi-Channel Sparse Blind Deconvolution*. Course assignment sheet and lecture notes, University of Tehran.
-
 2. Lewicki, M. S. (1998). A review of methods for spike sorting: the detection and classification of neural action potentials. *Network: Computation in Neural Systems*, 9(4), R53–R78.
-
 3. Ekanadham, C., Tranchina, D., & Simoncelli, E. P. (2011). A blind sparse deconvolution method for neural spike identification. *Advances in Neural Information Processing Systems (NeurIPS)*, 24, 1440–1448.
-
 4. Cheung, V., & Tresch, M. (2005). Non-negative matrix factorization and blind deconvolution for spike sorting and motor unit identification. *IEEE Transactions on Biomedical Engineering*.
-
 5. Comon, P., & Jutten, C. (Eds.). (2010). *Handbook of Blind Source Separation: Independent Component Analysis and Applications*. Academic Press.
