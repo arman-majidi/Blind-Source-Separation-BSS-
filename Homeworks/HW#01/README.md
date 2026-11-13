@@ -24,6 +24,7 @@ All parts of both sections are mandatory; no optional or bonus problems were ass
 | [codes/section\_1\_noiseTest.m](https://www.google.com/search?q=./codes/section_1_noiseTest.m) | MATLAB script for Section 1 (Part 3): mixing matrix estimation under additive white Gaussian noise ($\mathrm{SNR} = 15\ \mathrm{dB}$) using both the vertex-based and boundary-regression methods. |
 | [codes/section\_2.m](https://www.google.com/search?q=./codes/section_2.m) | MATLAB script for Section 2 (Parts 1, 2, 5, 6, 7, and 8): 3D mesh and 2D contour visualizations, Steepest Descent (`steepest_descend`), Newton's method (`newton`), Alternating Minimization (`alternation_minimization`), and Gradient Projection (`gradient_projection`). |
 | [BSS\_HW#1\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25231_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including scatter plots, histograms, marginal PDF diagrams, and optimization trajectories). |
+| [hw1](https://www.google.com/search?q=./hw1.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes` subfolder inside the homework directory.
@@ -665,7 +666,7 @@ G.P: final value of x for mu = 0.10 is [0.494570, 0.869138] in iteration: 15
 
 ## 7. References
 
-1. Babaie-Zadeh, M. *Blind Source Separation: Homework 1*. Course assignment sheet and lecture notes, Sharif University of Technology.
+1. Akhavan, S. *Blind Source Separation: Homework 1*. Course assignment sheet and lecture notes, University of Tehran.
 2. Comon, P., & Jutten, C. (Eds.). (2010). *Handbook of Blind Source Separation: Independent Component Analysis and Applications*. Academic Press.
 3. Nocedal, J., & Wright, S. J. (1999). *Numerical Optimization*. Springer.
 4. [GitHub Docs: Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
