@@ -25,10 +25,10 @@ All seven parts of the assignment are mandatory; no optional or bonus problems w
 
 | File | Description |
 | --- | --- |
-| [code/Section1.m](https://www.google.com/search?q=./code/Section1.m) | MATLAB script implementing Parts 1–6 (الف–و): Subset Selection (`nchoosek`), minimum $\ell_2$-norm estimation (`pinv(D) * x`), Matching Pursuit (MP), Orthogonal Matching Pursuit (OMP), Basis Pursuit (`linprog`), and Iteratively Reweighted Least Squares (IRLS). |
-| [code/hw5.mat](https://www.google.com/search?q=./code/hw5.mat) | Dataset containing the overcomplete dictionary matrix `D` ($10 \times 60$ double, unit-norm columns) and the noiseless observation vector `x` ($10 \times 1$ double). |
-| [BSS\_HW#5\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25235_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including mathematical derivations for BP and IRLS, execution times, estimated non-zero vectors $\hat{S}$, reconstruction errors, and the $\ell_2$-norm coefficient plot). |
-| [hw5.pdf](https://www.google.com/search?q=./hw5.pdf) | Original assignment problem sheet in Persian. |
+| [code/Section1.m](./code/Section1.m) | MATLAB script implementing Parts 1–6 (الف–و): Subset Selection (`nchoosek`), minimum $\ell_2$-norm estimation (`pinv(D) * x`), Matching Pursuit (MP), Orthogonal Matching Pursuit (OMP), Basis Pursuit (`linprog`), and Iteratively Reweighted Least Squares (IRLS). |
+| [code/hw5.mat](./code/hw5.mat) | Dataset containing the overcomplete dictionary matrix `D` ($10 \times 60$ double, unit-norm columns) and the noiseless observation vector `x` ($10 \times 1$ double). |
+| [BSS\_HW#5\_810100205\_Arman\_Majidi.pdf](./BSS_HW%235_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including mathematical derivations for BP and IRLS, execution times, estimated non-zero vectors $\hat{S}$, reconstruction errors, and the $\ell_2$-norm coefficient plot). |
+| [hw5.pdf](./hw5.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `code` subfolder inside the homework directory.
@@ -495,7 +495,7 @@ Error = 9.7861e-17
 ### 6.3 Reading the Theoretical Derivations and Report
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical derivations of Subset Selection, Minimum $\ell_2$-Norm, MP, OMP, Basis Pursuit LP reformulation, and IRLS Lagrange multiplier updates.
-2. Use **Section 5** to review the quantitative comparison table, active atom indices, and implementation notes alongside the original Persian report [BSS\_HW#5\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25235_810100205_Arman_Majidi.pdf) and assignment sheet [hw5.pdf](https://www.google.com/search?q=./hw5.pdf).
+2. Use **Section 5** to review the quantitative comparison table, active atom indices, and implementation notes alongside the original Persian report [BSS\_HW#5\_810100205\_Arman\_Majidi.pdf](./BSS_HW%235_810100205_Arman_Majidi.pdf) and assignment sheet [hw5.pdf](./hw5.pdf).
 
 ## 7. References
 
