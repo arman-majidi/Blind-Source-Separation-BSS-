@@ -20,11 +20,11 @@ All parts of both sections are mandatory; no optional or bonus problems were ass
 
 | File | Description |
 | --- | --- |
-| [codes/section\_1.m](https://www.google.com/search?q=./codes/section_1.m) | MATLAB script for Section 1 (Parts 1, 2, 4, and 5): uniform source generation, scatter plot, noiseless mixing matrix estimation (Algorithm 1 and Algorithm 2 with `slope_finder`), and 20-bin observation histograms. |
-| [codes/section\_1\_noiseTest.m](https://www.google.com/search?q=./codes/section_1_noiseTest.m) | MATLAB script for Section 1 (Part 3): mixing matrix estimation under additive white Gaussian noise ($\mathrm{SNR} = 15\ \mathrm{dB}$) using both the vertex-based and boundary-regression methods. |
-| [codes/section\_2.m](https://www.google.com/search?q=./codes/section_2.m) | MATLAB script for Section 2 (Parts 1, 2, 5, 6, 7, and 8): 3D mesh and 2D contour visualizations, Steepest Descent (`steepest_descend`), Newton's method (`newton`), Alternating Minimization (`alternation_minimization`), and Gradient Projection (`gradient_projection`). |
-| [BSS\_HW#1\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25231_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including scatter plots, histograms, marginal PDF diagrams, and optimization trajectories). |
-| [hw1](https://www.google.com/search?q=./hw1.pdf) | Original assignment problem sheet in Persian. |
+| [codes/section\_1.m](./codes/section_1.m) | MATLAB script for Section 1 (Parts 1, 2, 4, and 5): uniform source generation, scatter plot, noiseless mixing matrix estimation (Algorithm 1 and Algorithm 2 with `slope_finder`), and 20-bin observation histograms. |
+| [codes/section\_1\_noiseTest.m](./codes/section_1_noiseTest.m) | MATLAB script for Section 1 (Part 3): mixing matrix estimation under additive white Gaussian noise ($\mathrm{SNR} = 15\ \mathrm{dB}$) using both the vertex-based and boundary-regression methods. |
+| [codes/section\_2.m](./codes/section_2.m) | MATLAB script for Section 2 (Parts 1, 2, 5, 6, 7, and 8): 3D mesh and 2D contour visualizations, Steepest Descent (`steepest_descend`), Newton's method (`newton`), Alternating Minimization (`alternation_minimization`), and Gradient Projection (`gradient_projection`). |
+| [BSS\_HW#1\_810100205\_Arman\_Majidi.pdf](./BSS_HW%231_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including scatter plots, histograms, marginal PDF diagrams, and optimization trajectories). |
+| [hw1](./hw1.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes` subfolder inside the homework directory.
