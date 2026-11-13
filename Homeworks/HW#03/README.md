@@ -20,16 +20,16 @@ In addition to the standard loop-based implementations (`codes/more for/`), the 
 
 | File | Description |
 | --- | --- |
-| [codes/less for/Section1.m](https://www.google.com/search?q=./codes/less%2520for/Section1.m) | Vectorized MATLAB script for Section 1 (Parts 1–5) using `pagemtimes` and `pagetranspose`: 30-channel EEG mean removal, CSP spatial filter estimation ($W_{\mathrm{csp}}$), Trial 49 waveform and variance comparison, stem plots of spatial filter magnitudes, 14-filter feature extraction, LDA training ($W_{\mathrm{lda}}$, $c$), and 40-trial test classification. |
-| [codes/less for/Section2.m](https://www.google.com/search?q=./codes/less%2520for/Section2.m) | Vectorized MATLAB script for Section 2 using `pagemtimes` and `pagetranspose`: harmonic reference template tensor construction ($X_t$), GEVD-based Canonical Correlation Analysis (CCA), and SSVEP frequency classification across 15 trials. |
-| [codes/less for/hw3-1.mat](https://www.google.com/search?q=./codes/less%2520for/hw3-1.mat) | Dataset for Section 1 containing `TrainData_class1` ($30 \times 256 \times 60$), `TrainData_class2` ($30 \times 256 \times 60$), `TestData` ($30 \times 256 \times 40$), and ground-truth `TestLabel` ($1 \times 40$). |
-| [codes/less for/hw3-2.mat](https://www.google.com/search?q=./codes/less%2520for/hw3-2.mat) | Dataset for Section 2 containing SSVEP EEG recordings `data` ($6 \times 1250 \times 15$), stimulus frequencies `freq` ($1 \times 5$), and ground-truth trial labels `label` ($1 \times 15$). |
-| [codes/more for/Section1.m](https://www.google.com/search?q=./codes/more%2520for/Section1.m) | Loop-based MATLAB script for Section 1 (Parts 1–5) computing trial-by-trial spatial correlation matrices and CSP feature variances via explicit `for` loops. |
-| [codes/more for/Section2.m](https://www.google.com/search?q=./codes/more%2520for/Section2.m) | Loop-based MATLAB script for Section 2 computing trial-by-trial sample correlation and cross-correlation matrices inside nested `for` loops. |
-| [codes/more for/hw3-1.mat](https://www.google.com/search?q=./codes/more%2520for/hw3-1.mat) | Copy of the Section 1 EEG dataset (`hw3-1.mat`) inside `codes/more for/` for direct standalone execution. |
-| [codes/more for/hw3-2.mat](https://www.google.com/search?q=./codes/more%2520for/hw3-2.mat) | Copy of the Section 2 SSVEP dataset (`hw3-2.mat`) inside `codes/more for/` for direct standalone execution. |
-| [BSS\_HW#3\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25233_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including CSP filtered signals, spatial filter stem plots, GEVD eigenvalue matrices, LDA projection vector $W_{\mathrm{lda}}$ and threshold $c$, CCA block diagram, and test classification plots). |
-| [hw3.pdf](https://www.google.com/search?q=./hw3.pdf) | Original assignment problem sheet in Persian. |
+| [codes/less for/Section1.m](./codes/less%20for/Section1.m) | Vectorized MATLAB script for Section 1 (Parts 1–5) using `pagemtimes` and `pagetranspose`: 30-channel EEG mean removal, CSP spatial filter estimation ($W_{\mathrm{csp}}$), Trial 49 waveform and variance comparison, stem plots of spatial filter magnitudes, 14-filter feature extraction, LDA training ($W_{\mathrm{lda}}$, $c$), and 40-trial test classification. |
+| [codes/less for/Section2.m](./codes/less%20for/Section2.m) | Vectorized MATLAB script for Section 2 using `pagemtimes` and `pagetranspose`: harmonic reference template tensor construction ($X_t$), GEVD-based Canonical Correlation Analysis (CCA), and SSVEP frequency classification across 15 trials. |
+| [codes/less for/hw3-1.mat](./codes/less%20for/hw3-1.mat) | Dataset for Section 1 containing `TrainData_class1` ($30 \times 256 \times 60$), `TrainData_class2` ($30 \times 256 \times 60$), `TestData` ($30 \times 256 \times 40$), and ground-truth `TestLabel` ($1 \times 40$). |
+| [codes/less for/hw3-2.mat](./codes/less%20for/hw3-2.mat) | Dataset for Section 2 containing SSVEP EEG recordings `data` ($6 \times 1250 \times 15$), stimulus frequencies `freq` ($1 \times 5$), and ground-truth trial labels `label` ($1 \times 15$). |
+| [codes/more for/Section1.m](./codes/more%20for/Section1.m) | Loop-based MATLAB script for Section 1 (Parts 1–5) computing trial-by-trial spatial correlation matrices and CSP feature variances via explicit `for` loops. |
+| [codes/more for/Section2.m](./codes/more%20for/Section2.m) | Loop-based MATLAB script for Section 2 computing trial-by-trial sample correlation and cross-correlation matrices inside nested `for` loops. |
+| [codes/more for/hw3-1.mat](./codes/more%20for/hw3-1.mat) | Copy of the Section 1 EEG dataset (`hw3-1.mat`) inside `codes/more for/` for direct standalone execution. |
+| [codes/more for/hw3-2.mat](./codes/more%20for/hw3-2.mat) | Copy of the Section 2 SSVEP dataset (`hw3-2.mat`) inside `codes/more for/` for direct standalone execution. |
+| [BSS\_HW#3\_810100205\_Arman\_Majidi.pdf](./BSS_HW%233_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including CSP filtered signals, spatial filter stem plots, GEVD eigenvalue matrices, LDA projection vector $W_{\mathrm{lda}}$ and threshold $c$, CCA block diagram, and test classification plots). |
+| [hw3.pdf](./hw3.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes/less for` and `codes/more for` subfolders inside the homework directory.
@@ -207,7 +207,7 @@ Z_t^{(i)} = W_{\mathrm{imp}}^T X_t^{(i)} \in \mathbb{R}^{14 \times 256},
 x_k^{(i)}(t) = \mathrm{Var}\!\left(Z_t^{(i)}(k, :)\right), \quad k = 1, \dots, 14.
 ```
 
-From the $N_1 = N_2 = 60$ training feature vectors $\left\{x^{(i)}(t)\right\}_{t=1}^{60}$ of each class, we compute the $14 \times 1$ class sample means $\mu_1, \mu_2$ and the $14 \times 14$ within-class sample covariance matrices $\Sigma_1, \Sigma_2$:
+From the $N_1 = N_2 = 60$ training feature vectors $\left\\{x^{(i)}(t)\right\\}_{t=1}^{60}$ of each class, we compute the $14 \times 1$ class sample means $\mu_1, \mu_2$ and the $14 \times 14$ within-class sample covariance matrices $\Sigma_1, \Sigma_2$:
 
 ```math
 \mu_i = \frac{1}{N_i} \sum_{t=1}^{N_i} x^{(i)}(t) \in \mathbb{R}^{14 \times 1},
@@ -544,7 +544,7 @@ Prediction Rate is: 100%
 ### 6.3 Reading the Theoretical Derivations and Report
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical derivations of CSP, Fisher LDA, and CCA.
-2. Use **Section 5** to review the quantitative results, canonical correlation tables, and implementation notes alongside the original Persian report [BSS\_HW#3\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25233_810100205_Arman_Majidi.pdf) and assignment sheet [hw3.pdf](https://www.google.com/search?q=./hw3.pdf).
+2. Use **Section 5** to review the quantitative results, canonical correlation tables, and implementation notes alongside the original Persian report [BSS\_HW#3\_810100205\_Arman\_Majidi.pdf](./BSS_HW%233_810100205_Arman_Majidi.pdf) and assignment sheet [hw3.pdf](./hw3.pdf).
 
 ## 7. References
 
