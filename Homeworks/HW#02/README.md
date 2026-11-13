@@ -629,7 +629,7 @@ music_f_peaks       = [10000, 20000]
 ### 6.3 Reading the Theoretical Derivations and Report
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical proofs, subspace derivations, and algorithm descriptions.
-2. Use **Section 5** to review the numerical results and implementation notes alongside the original Persian report [BSS\_HW#2\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25232_810100205_Arman_Majidi.pdf) and assignment sheet [hw2.pdf](https://www.google.com/search?q=./hw2.pdf).
+2. Use **Section 5** to review the numerical results and implementation notes alongside the original Persian report [BSS\_HW#2\_810100205\_Arman\_Majidi.pdf](./BSS_HW%232_810100205_Arman_Majidi.pdf) and assignment sheet [hw2.pdf](./hw2.pdf).
 
 ## 7. References
 
