@@ -662,7 +662,7 @@ G.P: final value of x for mu = 0.10 is [0.494570, 0.869138] in iteration: 15
 ### 6.3 Reading the Theoretical Derivations and Report
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical derivations and algorithm logic.
-2. Use **Section 5** to review the quantitative tables and implementation notes alongside the original Persian report [BSS\_HW#1\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25231_810100205_Arman_Majidi.pdf).
+2. Use **Section 5** to review the quantitative tables and implementation notes alongside the original Persian report [BSS\_HW#1\_810100205\_Arman\_Majidi.pdf](./BSS_HW%231_810100205_Arman_Majidi.pdf).
 
 ## 7. References
 
