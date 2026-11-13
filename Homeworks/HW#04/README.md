@@ -20,12 +20,12 @@ All parts of both sections are mandatory; no optional or bonus problems were ass
 
 | File | Description |
 | --- | --- |
-| [codes/Section1.m](https://www.google.com/search?q=./codes/Section1.m) | MATLAB script for Section 1 (Parts 1–5 / الف–ی): non-stationary source and mixture generation, two-window GEVD separation, $K$-window Joint Diagonalization (`JD`) via Alternating Minimization, and 100-run Monte Carlo evaluations across $K \in \{2, 3, 4, 5\}$ and $\mathrm{SNR} \in \{5, 10, 15, 20\}\ \mathrm{dB}$. |
-| [codes/Section2.m](https://www.google.com/search?q=./codes/Section2.m) | MATLAB script for Section 2 (Parts 1–4 / الف–د): time-lagged GEVD source separation on `hw4-X1.mat` ($X_1$) and `hw4-X2.mat` ($X_2$), and FFT magnitude spectrum analysis of the estimated sources and observations. |
-| [codes/hw4-X1.mat](https://www.google.com/search?q=./codes/hw4-X1.mat) | First dataset for Section 2 containing the $2 \times 500$ noiseless observation matrix `X1` sampled at $f_s = 100\ \mathrm{Hz}$ ($5\ \mathrm{s}$ duration, composed of $2\ \mathrm{Hz}$ and $8\ \mathrm{Hz}$ sinusoidal components). |
-| [codes/hw4-X2.mat](https://www.google.com/search?q=./codes/hw4-X2.mat) | Second dataset for Section 2 containing the $2 \times 500$ noiseless observation matrix `X2` sampled at $f_s = 100\ \mathrm{Hz}$ ($5\ \mathrm{s}$ duration, composed of $1\ \mathrm{Hz}$, $2\ \mathrm{Hz}$, $4\ \mathrm{Hz}$, and $8\ \mathrm{Hz}$ components). |
-| [BSS\_HW#4\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25234_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including source/observation waveforms, GEVD matrices, Alternating Minimization cost trajectories, Monte Carlo error vectors, and FFT magnitude spectra). |
-| [hw4.pdf](https://www.google.com/search?q=./hw4.pdf) | Original assignment problem sheet in Persian. |
+| [codes/Section1.m](./codes/Section1.m) | MATLAB script for Section 1 (Parts 1–5 / الف–ی): non-stationary source and mixture generation, two-window GEVD separation, $K$-window Joint Diagonalization (`JD`) via Alternating Minimization, and 100-run Monte Carlo evaluations across $K \in \{2, 3, 4, 5\}$ and $\mathrm{SNR} \in \{5, 10, 15, 20\}\ \mathrm{dB}$. |
+| [codes/Section2.m](./codes/Section2.m) | MATLAB script for Section 2 (Parts 1–4 / الف–د): time-lagged GEVD source separation on `hw4-X1.mat` ($X_1$) and `hw4-X2.mat` ($X_2$), and FFT magnitude spectrum analysis of the estimated sources and observations. |
+| [codes/hw4-X1.mat](./codes/hw4-X1.mat) | First dataset for Section 2 containing the $2 \times 500$ noiseless observation matrix `X1` sampled at $f_s = 100\ \mathrm{Hz}$ ($5\ \mathrm{s}$ duration, composed of $2\ \mathrm{Hz}$ and $8\ \mathrm{Hz}$ sinusoidal components). |
+| [codes/hw4-X2.mat](./codes/hw4-X2.mat) | Second dataset for Section 2 containing the $2 \times 500$ noiseless observation matrix `X2` sampled at $f_s = 100\ \mathrm{Hz}$ ($5\ \mathrm{s}$ duration, composed of $1\ \mathrm{Hz}$, $2\ \mathrm{Hz}$, $4\ \mathrm{Hz}$, and $8\ \mathrm{Hz}$ components). |
+| [BSS\_HW#4\_810100205\_Arman\_Majidi.pdf](./BSS_HW%234_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including source/observation waveforms, GEVD matrices, Alternating Minimization cost trajectories, Monte Carlo error vectors, and FFT magnitude spectra). |
+| [hw4.pdf](./hw4.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes` subfolder inside the homework directory.
@@ -505,7 +505,7 @@ B_T =
 ### 6.3 Reading the Theoretical Derivations and Report
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical derivations of non-stationary GEVD, multi-window Joint Diagonalization via Alternating Minimization, and time-lagged GEVD.
-2. Use **Section 5** to review the quantitative results, spectral peak tables, and implementation notes alongside the original Persian report [BSS\_HW#4\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25234_810100205_Arman_Majidi.pdf) and assignment sheet [hw4.pdf](https://www.google.com/search?q=./hw4.pdf).
+2. Use **Section 5** to review the quantitative results, spectral peak tables, and implementation notes alongside the original Persian report [BSS\_HW#4\_810100205\_Arman\_Majidi.pdf](./BSS_HW%234_810100205_Arman_Majidi.pdf) and assignment sheet [hw4.pdf](./hw4.pdf).
 
 ## 7. References
 
