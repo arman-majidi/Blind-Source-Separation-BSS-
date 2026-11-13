@@ -28,14 +28,14 @@ All parts of all three sections are mandatory; no optional or bonus problems wer
 
 | File | Description | 
 | ----- | ----- | 
-| [codes/Section1.m](https://www.google.com/search?q=./codes/Section1.m) | MATLAB script for Section 1 (Parts 1–4 / الف–د): noiseless Basis Pursuit (`linprog`), noiseless Matching Pursuit (MP), noisy Basis Pursuit, and Coordinate-Descent LASSO (soft-thresholding) on `hw6-part1.mat`. | 
-| [codes/Section2.m](https://www.google.com/search?q=./codes/Section2.m) | MATLAB script for Section 2 (Parts 1–2): analytical $2 \times N$ half-plane equiangular frame construction ($N = 2, \dots, 35$) and iterative $3 \times 10$ stochastic frame optimization ($50\,000$ iterations) minimizing mutual coherence $\mu(D)$. | 
-| [codes/Section3.m](https://www.google.com/search?q=./codes/Section3.m) | MATLAB script for Section 3 (Parts 1–6): ground-truth dictionary mutual coherence calculation, 50-iteration **MOD** and **K-SVD** dictionary learning with `OMP`, representation error convergence plotting, Successful Recovery Rate (SRR) evaluation, and normalized source reconstruction error $E$. | 
-| [codes/OMP.m](https://www.google.com/search?q=./codes/OMP.m) | Helper MATLAB function `s_hat = OMP(x, D, N, N0)` implementing $N_0$-step Orthogonal Matching Pursuit for the sparse coding stage of MOD and K-SVD in Section 3. | 
-| [codes/hw6-part1.mat](https://www.google.com/search?q=./codes/hw6-part1.mat) | Dataset for Section 1 containing the dictionary matrix `D` ($5 \times 15$ double, unit-norm columns), noiseless observation vector `x` ($5 \times 1$ double), and noisy observation vector `x_noisy` ($5 \times 1$ double). | 
-| [codes/hw6-part3.mat](https://www.google.com/search?q=./codes/hw6-part3.mat) | Dataset for Section 3 containing the ground-truth dictionary `D` ($10 \times 40$ double, unit-norm columns), sparse source matrix `S` ($40 \times 1500$ double), noiseless observation matrix `X` ($10 \times 1500$ double), and sparsity level `N0` ($= 2$, `uint8`). | 
-| [BSS_HW#6_810100205_Arman_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25236_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including BP/MP/LASSO recovered vectors, soft-thresholding diagram, 2D and 3D mutual coherence curves, MOD vs. K-SVD convergence plots across two runs, SRR percentages, and source errors). | 
-| [hw6.pdf](https://www.google.com/search?q=./hw6.pdf) | Original assignment problem sheet in Persian. | 
+| [codes/Section1.m](./codes/Section1.m) | MATLAB script for Section 1 (Parts 1–4 / الف–د): noiseless Basis Pursuit (`linprog`), noiseless Matching Pursuit (MP), noisy Basis Pursuit, and Coordinate-Descent LASSO (soft-thresholding) on `hw6-part1.mat`. | 
+| [codes/Section2.m](./codes/Section2.m) | MATLAB script for Section 2 (Parts 1–2): analytical $2 \times N$ half-plane equiangular frame construction ($N = 2, \dots, 35$) and iterative $3 \times 10$ stochastic frame optimization ($50\,000$ iterations) minimizing mutual coherence $\mu(D)$. | 
+| [codes/Section3.m](./codes/Section3.m) | MATLAB script for Section 3 (Parts 1–6): ground-truth dictionary mutual coherence calculation, 50-iteration **MOD** and **K-SVD** dictionary learning with `OMP`, representation error convergence plotting, Successful Recovery Rate (SRR) evaluation, and normalized source reconstruction error $E$. | 
+| [codes/OMP.m](./codes/OMP.m) | Helper MATLAB function `s_hat = OMP(x, D, N, N0)` implementing $N_0$-step Orthogonal Matching Pursuit for the sparse coding stage of MOD and K-SVD in Section 3. | 
+| [codes/hw6-part1.mat](./codes/hw6-part1.mat) | Dataset for Section 1 containing the dictionary matrix `D` ($5 \times 15$ double, unit-norm columns), noiseless observation vector `x` ($5 \times 1$ double), and noisy observation vector `x_noisy` ($5 \times 1$ double). | 
+| [codes/hw6-part3.mat](./codes/hw6-part3.mat) | Dataset for Section 3 containing the ground-truth dictionary `D` ($10 \times 40$ double, unit-norm columns), sparse source matrix `S` ($40 \times 1500$ double), noiseless observation matrix `X` ($10 \times 1500$ double), and sparsity level `N0` ($= 2$, `uint8`). | 
+| [BSS_HW#6_810100205_Arman_Majidi.pdf](./BSS_HW%236_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including BP/MP/LASSO recovered vectors, soft-thresholding diagram, 2D and 3D mutual coherence curves, MOD vs. K-SVD convergence plots across two runs, SRR percentages, and source errors). | 
+| [hw6.pdf](./hw6.pdf) | Original assignment problem sheet in Persian. | 
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. | 
 
 Keep the `codes` subfolder inside the homework directory.
@@ -681,7 +681,7 @@ Error (K-SVD Algorithm) = 0.32125
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical derivations of Basis Pursuit, Matching Pursuit, Coordinate-Descent LASSO, 2D/3D low-coherence frame design, MOD, and K-SVD.
 
-2. Use **Section 5** to review the quantitative results tables and implementation notes alongside the original Persian report [BSS_HW#6_810100205_Arman_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25236_810100205_Arman_Majidi.pdf) and assignment sheet [hw6.pdf](https://www.google.com/search?q=./hw6.pdf).
+2. Use **Section 5** to review the quantitative results tables and implementation notes alongside the original Persian report [BSS_HW#6_810100205_Arman_Majidi.pdf](./BSS_HW%236_810100205_Arman_Majidi.pdf) and assignment sheet [hw6.pdf](./hw6.pdf).
 
 ## 7. References
 
