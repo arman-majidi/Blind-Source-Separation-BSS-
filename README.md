@@ -58,15 +58,19 @@ A four-class BCI classification problem (right arm, right thumb, right foot, and
 
 ## 6. How to Use
 
-All implementations are written in MATLAB. Open MATLAB, navigate to the `codes/` folder of the desired homework or the project, and run the scripts. For example:
+1. Clone the repository:
 
-```matlab
-cd "Homeworks/HW#01/codes"
-section_1
+```bash
+git clone https://github.com/arman-majidi/Blind-Source-Separation-BSS-.git
 ```
 
-- **Requirements:** MATLAB R2020b or later. Some scripts also need the Signal Processing Toolbox and the Statistics and Machine Learning Toolbox.
-- For the project, copy the dataset files `subj_1.mat` through `subj_15.mat` into `Project/codes/` before running `subj1.m`–`subj15.m`.
+2. Open MATLAB (R2020b or later) and go to the `codes/` folder of the homework you want, for example `Homeworks/HW#01/codes`.
+3. Run the section scripts in that folder (for example `section_1.m`). The `.mat` data files each homework needs are already included in its `codes/` folder.
+4. For the detailed problem statements, derivations, and expected results, read the `README.md` inside each homework folder.
+
+**Notes:**
+- Some scripts require the Signal Processing Toolbox or the Statistics and Machine Learning Toolbox.
+- The project dataset (`subj_1.mat`–`subj_15.mat`) is not included in this repository. It must be placed in `Project/codes/` before running the subject scripts.
 
 ## 7. References
 
