@@ -440,14 +440,14 @@ All results in Section 1 are **completely deterministic** because the dataset `h
 
 | Problem Part & Quantity | Mathematical Expression | MATLAB Expression (`Section1.m`) | Exact Numerical Result / Observation |
 | --- | --- | --- | --- |
-| Part 1 — Extreme CSP Eigenvalues | $R_x^{(1)} w_k = \lambda_k R_x^{(2)} w_k$ | `[U, D] = eig(Rx_1, Rx_2)` (sorted descending) | $\lambda_1 = 2.2494,\ \lambda_2 = 1.4902,\ \lambda_3 = 1.3556,\ \dots,\ \lambda_{29} = 0.3085,\ \lambda_{30} = 0.3010$ |
-| Part 1 — Trial 49 Variance with 1st Filter ($W_{\mathrm{csp}}(:, 1)$) | $\mathrm{Var}\!\left(W_{\mathrm{csp}}(:, 1)^T X_{49}^{(r)}\right)$ | `var(W1_exp49_r1)` and `var(W2_exp49_r1)` | Class 1: $\mathbf{1.406656}$ vs. Class 2: $\mathbf{0.868848}$ (higher variance for Class 1) |
-| Part 1 — Trial 49 Variance with 30th Filter ($W_{\mathrm{csp}}(:, 30)$) | $\mathrm{Var}\!\left(W_{\mathrm{csp}}(:, 30)^T X_{49}^{(r)}\right)$ | `var(W1_exp49_r30)` and `var(W2_exp49_r30)` | Class 1: $\mathbf{1.008859}$ vs. Class 2: $\mathbf{7.579428}$ (higher variance for Class 2) |
-| Part 2 — Dominant Channels in 1st Filter | $\arg\max_m |W_{\mathrm{csp}}(m, 1)|$ | `stem(abs(W_csp(:, 1)))` | **Channel 8** ($0.511170$) and **Channel 12** ($0.364258$) |
-| Part 2 — Dominant Channels in 30th Filter | $\arg\max_m |W_{\mathrm{csp}}(m, 30)|$ | `stem(abs(W_csp(:, 30)))` | **Channel 7** ($0.728248$) and **Channel 11** ($0.468695$) |
-| Part 3 — LDA Generalized Eigenvalues | $\mathrm{GEVD}(S_B, S_W)$ | `eig((mu_1-mu_2)*(mu_1-mu_2).', sigma_1+sigma_2)` | $\lambda_1 = \mathbf{3.7805}$, $\lambda_2 \approx \dots \approx \lambda_{14} \approx 0$ ($\mathrm{rank}(S_B) = 1$) |
-| Part 3 — Projected Class Means & LDA Threshold $c$ | $\mu^{(i)} = W_{\mathrm{lda}}^T \mu_i,\ c = \frac{\mu^{(1)} + \mu^{(2)}}{2}$ | `c = (Mu1 + Mu2) / 2` | $\mu^{(1)} = 2.8995,\ \mu^{(2)} = 1.1926,\ c = \mathbf{2.0461}$ (typed as `2.4061` in report text) |
-| Parts 4 & 5 — Test Set Classification Accuracy | $\hat{y}_m = 1 + \mathbb{I}\{W_{\mathrm{lda}}^T x_{\mathrm{test}}(m) < c\}$ | `sum(TestLabel == MyLabel) / 40 * 100` | $\mathbf{85\%}$ ($34 / 40$ correct; $6$ errors at trials $6, 16, 32, 37, 39, 40$) |
+| Part 1 — Extreme CSP Eigenvalues | $`R_x^{(1)} w_k = \lambda_k R_x^{(2)} w_k`$ | `[U, D] = eig(Rx_1, Rx_2)` (sorted descending) | $`\lambda_1 = 2.2494,\ \lambda_2 = 1.4902,\ \lambda_3 = 1.3556,\ \dots,\ \lambda_{29} = 0.3085,\ \lambda_{30} = 0.3010`$ |
+| Part 1 — Trial 49 Variance with 1st Filter ($`W_{\mathrm{csp}}(:, 1)`$) | $`\mathrm{Var}\!\left(W_{\mathrm{csp}}(:, 1)^T X_{49}^{(r)}\right)`$ | `var(W1_exp49_r1)` and `var(W2_exp49_r1)` | Class 1: $`\mathbf{1.406656}`$ vs. Class 2: $`\mathbf{0.868848}`$ (higher variance for Class 1) |
+| Part 1 — Trial 49 Variance with 30th Filter ($`W_{\mathrm{csp}}(:, 30)`$) | $`\mathrm{Var}\!\left(W_{\mathrm{csp}}(:, 30)^T X_{49}^{(r)}\right)`$ | `var(W1_exp49_r30)` and `var(W2_exp49_r30)` | Class 1: $`\mathbf{1.008859}`$ vs. Class 2: $`\mathbf{7.579428}`$ (higher variance for Class 2) |
+| Part 2 — Dominant Channels in 1st Filter | $`\arg\max_m \lvert W_{\mathrm{csp}}(m, 1) \rvert`$ | `stem(abs(W_csp(:, 1)))` | **Channel 8** ($0.511170$) and **Channel 12** ($0.364258$) |
+| Part 2 — Dominant Channels in 30th Filter | $`\arg\max_m \lvert W_{\mathrm{csp}}(m, 30) \rvert`$ | `stem(abs(W_csp(:, 30)))` | **Channel 7** ($0.728248$) and **Channel 11** ($0.468695$) |
+| Part 3 — LDA Generalized Eigenvalues | $`\mathrm{GEVD}(S_B, S_W)`$ | `eig((mu_1-mu_2)*(mu_1-mu_2).', sigma_1+sigma_2)` | $`\lambda_1 = \mathbf{3.7805}`$, $`\lambda_2 \approx \dots \approx \lambda_{14} \approx 0`$ ($`\mathrm{rank}(S_B) = 1`$) |
+| Part 3 — Projected Class Means & LDA Threshold $`c`$ | $`\mu^{(i)} = W_{\mathrm{lda}}^T \mu_i,\ c = \frac{\mu^{(1)} + \mu^{(2)}}{2}`$ | `c = (Mu1 + Mu2) / 2` | $`\mu^{(1)} = 2.8995,\ \mu^{(2)} = 1.1926,\ c = \mathbf{2.0461}`$ (typed as `2.4061` in report text) |
+| Parts 4 & 5 — Test Set Classification Accuracy | $`\hat{y}_m = 1 + \mathbb{I}\{W_{\mathrm{lda}}^T x_{\mathrm{test}}(m) < c\}`$ | `sum(TestLabel == MyLabel) / 40 * 100` | $`\mathbf{85\%}`$ ($34 / 40$ correct; $6$ errors at trials $6, 16, 32, 37, 39, 40$) |
 
 ### 5.2 Section 2 — Summary of SSVEP Frequency Recognition via CCA (`Section2.m`)
 
