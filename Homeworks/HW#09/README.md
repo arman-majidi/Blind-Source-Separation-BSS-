@@ -21,11 +21,11 @@ All parts of all three sections are mandatory; no optional or bonus problems wer
 
 | File | Description |
 | --- | --- |
-| [codes/Section1.m](https://www.google.com/search?q=./codes/Section1.m) | MATLAB script for Section 1 (Parts 0–3): noisy/noiseless signal plotting, PCA spatial whitening ($`Z = D^{-1/2} U^T X`$), 5th-order polynomial MSE score estimation, deflationary row-by-row ICA with Gram-Schmidt orthogonalization, permutation/scale alignment, error $`E`$ calculation, and convergence plot. |
-| [codes/Section2.m](https://www.google.com/search?q=./codes/Section2.m) | MATLAB script for Section 2 (Parts 0–3): equivariant ICA on unwhitened noisy observations $`X`$ using relative gradient updates $`\frac{\partial f}{\partial B} = D B`$, 5th-order polynomial MSE score estimation, permutation/scale alignment, error $`E`$ calculation, and convergence plot. |
-| [codes/hw9.mat](https://www.google.com/search?q=./codes/hw9.mat) | Dataset containing the $`3 \times 3`$ mixing matrix `A`, the $`3 \times 1001`$ ground-truth source matrix `S`, and the $`3 \times 1001`$ additive Gaussian noise matrix `Noise`. |
-| [BSS\_HW#9\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25239_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including source/observation waveforms, BSS block diagrams, estimated permutation matrices, overlaid reconstructed sources, $`500`$ and $`5000`$-iteration convergence curves, and comparative analysis). |
-| [hw9.pdf](https://www.google.com/search?q=./hw9.pdf) | Original assignment problem sheet in Persian. |
+| [codes/Section1.m](./codes/Section1.m) | MATLAB script for Section 1 (Parts 0–3): noisy/noiseless signal plotting, PCA spatial whitening ($`Z = D^{-1/2} U^T X`$), 5th-order polynomial MSE score estimation, deflationary row-by-row ICA with Gram-Schmidt orthogonalization, permutation/scale alignment, error $`E`$ calculation, and convergence plot. |
+| [codes/Section2.m](./codes/Section2.m) | MATLAB script for Section 2 (Parts 0–3): equivariant ICA on unwhitened noisy observations $`X`$ using relative gradient updates $`\frac{\partial f}{\partial B} = D B`$, 5th-order polynomial MSE score estimation, permutation/scale alignment, error $`E`$ calculation, and convergence plot. |
+| [codes/hw9.mat](./codes/hw9.mat) | Dataset containing the $`3 \times 3`$ mixing matrix `A`, the $`3 \times 1001`$ ground-truth source matrix `S`, and the $`3 \times 1001`$ additive Gaussian noise matrix `Noise`. |
+| [BSS\_HW#9\_810100205\_Arman\_Majidi.pdf](./BSS_HW%239_810100205_Arman_Majidi.pdf) | Submitted report and analytical solutions in Persian (including source/observation waveforms, BSS block diagrams, estimated permutation matrices, overlaid reconstructed sources, $`500`$ and $`5000`$-iteration convergence curves, and comparative analysis). |
+| [hw9.pdf](./hw9.pdf) | Original assignment problem sheet in Persian. |
 | `README.md` | Self-contained English problem statements, mathematical derivations, algorithm descriptions, numerical results, and usage guide. |
 
 Keep the `codes` subfolder inside the homework directory.
@@ -386,7 +386,7 @@ for `Section2.m`.
 ### 6.3 Reading the Theoretical Derivations and Report
 
 1. Use **Section 3** for the complete English translation of the assignment problems and **Section 4** for the step-by-step mathematical derivations of spatial whitening, polynomial MSE score function estimation, Deflationary Orthonormal ICA, and Equivariant ICA.
-2. Use **Section 5** to review the numerical results, comparative benchmarks, and implementation notes alongside the original Persian report [BSS\_HW#9\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_HW%25239_810100205_Arman_Majidi.pdf) and assignment sheet [hw9.pdf](https://www.google.com/search?q=./hw9.pdf).
+2. Use **Section 5** to review the numerical results, comparative benchmarks, and implementation notes alongside the original Persian report [BSS\_HW#9\_810100205\_Arman\_Majidi.pdf](./BSS_HW%239_810100205_Arman_Majidi.pdf) and assignment sheet [hw9.pdf](./hw9.pdf).
 
 ## 7. References
 
