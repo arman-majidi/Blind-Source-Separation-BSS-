@@ -553,11 +553,11 @@ Because `unifrnd` draws a fresh random sample of $S_{2 \times 1000}$ on each exe
 | --- | --- | --- | --- |
 | Part 1 — Eigenvalues of $R_X = X X^T$ | $R_X = U D U^T$ | `[U, D] = eig(R_x)` (sorted descending) | $\lambda_1 = 5.0195 \times 10^4$, $\lambda_2 = 1.9496 \times 10^3$, $\lambda_3 = 1.2836 \times 10^{-11} \approx 0$ |
 | Part 2 — Null eigenvector $u_3$ | $u_3^T X = 0$, $u_3^T A = 0$ | `U(:, 3)` | $u_3 = [0.1961,\ 0.7845,\ -0.5883]^T = \frac{1}{\sqrt{26}}[1,\ 4,\ -3]^T$ |
-| Part 2 — Subspace expansion matrix $C$ | $A = U_{2d} C \Longleftrightarrow C = U_{2d}^T A = D_{2d}^{1/2} Z_{2d} S^\dagger$ | `C = U_2d.' * A` and `D_2d^(1/2) * Z_2d / S` | $\begin{bmatrix} 3.7234 & -2.7940 \\ -0.3690 & -1.0925 \end{bmatrix}$ (identical via both methods) |
+| Part 2 — Subspace expansion matrix $C$ | $A = U_{2d} C \Longleftrightarrow C = U_{2d}^T A = D_{2d}^{1/2} Z_{2d} S^\dagger$ | `C = U_2d.' * A` and `D_2d^(1/2) * Z_2d / S` | $`\begin{bmatrix} 3.7234 & -2.7940 \\ -0.3690 & -1.0925 \end{bmatrix}`$ (identical via both methods) |
 | Part 3 — 2D Energy Coverage | $\frac{\lambda_1 + \lambda_2}{\lambda_1 + \lambda_2 + \lambda_3} \times 100\%$ | `sum(D_2d(:)) / sum(D(:)) * 100` | $100\%$ (lossless 3D $\to$ 2D reduction) |
-| Part 3 — 2D Spatial Whitening Matrix $B_{2d}$ | $B_{2d} = D_{2d}^{-1/2} U_{2d}^T$, $Z_{2d} = B_{2d} X$ | `B_2d = D_2d^(-1/2) * U_2d.'` | $\begin{bmatrix} 0.0016 & 0.0022 & 0.0035 \\ 0.0207 & -0.0083 & -0.0042 \end{bmatrix}$, $Z_{2d} Z_{2d}^T = I_2$ |
+| Part 3 — 2D Spatial Whitening Matrix $B_{2d}$ | $B_{2d} = D_{2d}^{-1/2} U_{2d}^T$, $Z_{2d} = B_{2d} X$ | `B_2d = D_2d^(-1/2) * U_2d.'` | $`\begin{bmatrix} 0.0016 & 0.0022 & 0.0035 \\ 0.0207 & -0.0083 & -0.0042 \end{bmatrix}`$, $Z_{2d} Z_{2d}^T = I_2$ |
 | Part 4 — SVD vs. PCA & Whitening | $\mathrm{rank}(X)=2$, $G G^T = D$, $Q = \pm U$, $V_{2\times T}^T = \pm Z_{2d}$ | `[Q, G, V_T] = svd(X)` | Verified: $G G^T = D$, $Q = -U$, and $V_{2\times T}^T = -Z_{2\times T}$ |
-| Part 5 — Source Reconstruction Matrix $F$ | $S = F Z_{2d} \Longleftrightarrow F = S Z_{2d}^T = \pm A^\dagger Q_{3\times 2} G_{2\times 2}$ | `F = S * Z_2d.'` and `A \ Q * G(:, 1:2)` | $\pm \begin{bmatrix} 48.0041 & -29.1940 \\ -16.2129 & -32.2421 \end{bmatrix}$, $S v_k = 0\ (\forall k \ge 3)$ |
+| Part 5 — Source Reconstruction Matrix $F$ | $S = F Z_{2d} \Longleftrightarrow F = S Z_{2d}^T = \pm A^\dagger Q_{3\times 2} G_{2\times 2}$ | `F = S * Z_2d.'` and `A \ Q * G(:, 1:2)` | $`\pm \begin{bmatrix} 48.0041 & -29.1940 \\ -16.2129 & -32.2421 \end{bmatrix}`$, $S v_k = 0\ (\forall k \ge 3)$ |
 | Part 6 — 1D Energy Coverage ($\ge 90\%$ target) | $\frac{\lambda_1}{\lambda_1 + \lambda_2 + \lambda_3} \times 100\%$ | `sum(D_1d(:)) / sum(D(:)) * 100` | $96.26\%$ (prints `96%`; exceeds $90\%$ threshold with $1$ dimension) |
 
 ### 5.2 Section 2 — Summary of DOA and Frequency Estimation (`Section2.m`)
