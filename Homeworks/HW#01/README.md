@@ -587,11 +587,11 @@ Because `unifrnd` and `awgn` draw random realizations on each run, the numerical
 
 | Scenario & Method | Script | Parameters | Reported Estimate $\hat{A}$ | Max Element-wise Error $\|\hat{A}-A\|_{\max}$ | Frobenius Error $\|\hat{A}-A\|_F$ |
 | --- | --- | --- | --- | --- | --- |
-| Ground-truth mixing matrix $A$ | — | $T = 1000$ | $\begin{bmatrix} 0.6000 & 0.8000 \\ 0.8000 & -0.6000 \end{bmatrix}$ | $0$ | $0$ |
-| Noiseless — Algorithm 1 (Extreme vertices) | `section_1.m` | 4 extreme points | $\begin{bmatrix} 0.5986 & 0.8011 \\ 0.8154 & -0.5788 \end{bmatrix}$ | $0.0212$ | $0.0263$ |
-| Noiseless — Algorithm 2 (`slope_finder` + `polyfit`) | `section_1.m` | `line_len = 100000`, `dist_threshold = 0.8` | $\begin{bmatrix} 0.6004 & 0.7997 \\ 0.8086 & -0.5883 \end{bmatrix}$ | $0.0117$ | $0.0145$ |
-| Noisy ($\mathrm{SNR}=15\ \mathrm{dB}$) — Algorithm 1 (Extreme vertices) | `section_1_noiseTest.m` | 4 extreme points | $\begin{bmatrix} 0.5784 & 0.8158 \\ 0.7839 & -0.6209 \end{bmatrix}$ | $0.0216$ | $0.0376$ |
-| Noisy ($\mathrm{SNR}=15\ \mathrm{dB}$) — Algorithm 2 (`slope_finder` + `polyfit`) | `section_1_noiseTest.m` | `line_len = 1000`, `dist_threshold = 0.3` | $\begin{bmatrix} 0.5909 & 0.8068 \\ 0.8086 & -0.6120 \end{bmatrix}$ | $0.0120$ | $0.0186$ |
+| Ground-truth mixing matrix $A$ | — | $T = 1000$ | $`\begin{bmatrix} 0.6000 & 0.8000 \\ 0.8000 & -0.6000 \end{bmatrix}`$ | $0$ | $0$ |
+| Noiseless — Algorithm 1 (Extreme vertices) | `section_1.m` | 4 extreme points | $`\begin{bmatrix} 0.5986 & 0.8011 \\ 0.8154 & -0.5788 \end{bmatrix}`$ | $0.0212$ | $0.0263$ |
+| Noiseless — Algorithm 2 (`slope_finder` + `polyfit`) | `section_1.m` | `line_len = 100000`, `dist_threshold = 0.8` | $`\begin{bmatrix} 0.6004 & 0.7997 \\ 0.8086 & -0.5883 \end{bmatrix}`$ | $0.0117$ | $0.0145$ |
+| Noisy ($\mathrm{SNR}=15\ \mathrm{dB}$) — Algorithm 1 (Extreme vertices) | `section_1_noiseTest.m` | 4 extreme points | $`\begin{bmatrix} 0.5784 & 0.8158 \\ 0.7839 & -0.6209 \end{bmatrix}`$ | $0.0216$ | $0.0376$ |
+| Noisy ($\mathrm{SNR}=15\ \mathrm{dB}$) — Algorithm 2 (`slope_finder` + `polyfit`) | `section_1_noiseTest.m` | `line_len = 1000`, `dist_threshold = 0.3` | $`\begin{bmatrix} 0.5909 & 0.8068 \\ 0.8086 & -0.6120 \end{bmatrix}`$ | $0.0120$ | $0.0186$ |
 
 ### 5.2 Section 1 — Summary of Marginal Distributions (Parts 4, 5 & 6)
 
