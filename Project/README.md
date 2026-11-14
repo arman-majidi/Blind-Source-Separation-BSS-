@@ -25,31 +25,31 @@ All components of the project are mandatory; as noted in the assignment sheet an
 
 | File | Description |
 | --- | --- |
-| [codes/Filter.m](https://www.google.com/search?q=./codes/Filter.m) | Vectorized temporal bandpass filter function applying a 7th-order digital Butterworth bandpass filter (`butter`, `zp2sos`, `sosfilt`) along the time dimension (dimension 2) at $f_s = 2400\ \mathrm{Hz}$. |
-| [codes/Train.m](https://www.google.com/search?q=./codes/Train.m) | Binary training function implementing 3D tensor mean removal, trial-averaged spatial covariance estimation (`pagemtimes`, `pagetranspose`), GEVD-based Common Spatial Patterns (`W_csp`), variance feature extraction, and GEVD-based Fisher LDA (`W_lda`, `thr`, `rule`). |
-| [codes/Test.m](https://www.google.com/search?q=./codes/Test.m) | Hierarchical three-stage decision-tree evaluation function that cascades Classifiers 1, 2, and 3 on multi-trial 3D EEG tensors and accumulates the $4 \times 4$ confusion matrix via `sub2ind` and `accumarray`. |
-| [codes/Label.m](https://www.google.com/search?q=./codes/Label.m) | Binary decision helper function that maps 1D LDA projections to class labels (`sectionNum + 1` vs. `1`) based on the midpoint threshold `thr` and mean ordering flag `rule`. |
-| [codes/subj1.m](https://www.google.com/search?q=./codes/subj1.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 1 (`filtersNum = 2`, bands `[20 35]`, `[0.1 17]`, `[0.1 4]` Hz). |
-| [codes/subj2.m](https://www.google.com/search?q=./codes/subj2.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 2 (`filtersNum = 4`, bands `[20 45]`, `[3 15]`, `[0.1 2]` Hz). |
-| [codes/subj3.m](https://www.google.com/search?q=./codes/subj3.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 3 (`filtersNum = 2`, bands `[20 40]`, `[0.1 10]`, `[0.1 3.6]` Hz). |
-| [codes/subj4.m](https://www.google.com/search?q=./codes/subj4.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 4 (`filtersNum = 2`, bands `[20 40]`, `[11 45]`, `[0.1 6]` Hz). |
-| [codes/subj5.m](https://www.google.com/search?q=./codes/subj5.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 5 (`filtersNum = 3`, bands `[20 40]`, `[13 19]`, `[1 6]` Hz). |
-| [codes/subj6.m](https://www.google.com/search?q=./codes/subj6.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 6 (`filtersNum = 3`, bands `[20 35]`, `[10 17]`, `[0.1 7]` Hz). |
-| [codes/subj7.m](https://www.google.com/search?q=./codes/subj7.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 7 (`filtersNum = 3`, bands `[20 45]`, `[11 16]`, `[1 8]` Hz). |
-| [codes/subj8.m](https://www.google.com/search?q=./codes/subj8.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 8 (`filtersNum = 4`, bands `[25 50]`, `[10 35]`, `[1 17]` Hz). |
-| [codes/subj9.m](https://www.google.com/search?q=./codes/subj9.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 9 (`filtersNum = 4`, bands `[20 40]`, `[10 19]`, `[1 8]` Hz). |
-| [codes/subj10.m](https://www.google.com/search?q=./codes/subj10.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 10 (`filtersNum = 4` in script / `3` in final report, bands `[20 40]`, `[10 45]`/`[10 40]`, `[2 5]` Hz). |
-| [codes/subj11.m](https://www.google.com/search?q=./codes/subj11.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 11 (`filtersNum = 4`, bands `[20 45]`, `[11 17]`, `[1 4]` Hz). |
-| [codes/subj12.m](https://www.google.com/search?q=./codes/subj12.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 12 (`filtersNum = 2`, bands `[20 40]`, `[5 20]`, `[0.1 2]` Hz). |
-| [codes/subj13.m](https://www.google.com/search?q=./codes/subj13.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 13 (`filtersNum = 5`, bands `[12 30]`, `[25 40]`, `[1 15]` Hz). |
-| [codes/subj14.m](https://www.google.com/search?q=./codes/subj14.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 14 (`filtersNum = 3`, bands `[19 35]`, `[6 18]`, `[5 9]` Hz). |
-| [codes/subj15.m](https://www.google.com/search?q=./codes/subj15.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 15 (`filtersNum = 2`, bands `[20 35]`, `[10 50]`, `[0.1 6]` Hz). |
-| [codes/unused functions/Concat.m](https://www.google.com/search?q=./codes/unused%2520functions/Concat.m) | Legacy helper function for concatenating cell-array tensors along the 3rd dimension (superseded by MATLAB's built-in `cat(3, ...)` after `tic`/`toc` benchmarking). |
-| [codes/unused functions/Filter.m](https://www.google.com/search?q=./codes/unused%2520functions/Filter.m) | Legacy FFT-based ideal brick-wall bandpass filter (`fft`, `fftshift`, `ifftshift`, `ifft`) over channel and trial loops (superseded by the $2\times$ faster vectorized Butterworth filter in `codes/Filter.m`). |
-| [BSS\_Project\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_Project_810100205_Arman_Majidi.pdf) | Submitted 33-page Persian project report containing function descriptions, the hierarchical tree diagram, CSP and LDA mathematical derivations, and 4-stage hyperparameter tuning logs and confusion matrices for all 15 subjects. |
-| [project.pdf](https://www.google.com/search?q=./project.pdf) | Original course final project assignment sheet in Persian. |
-| [Recording.pdf](https://www.google.com/search?q=./Recording.pdf) | Official signal acquisition and experimental protocol documentation for the 2nd Iranian National BCI Competition dataset in Persian (including 63-channel scalp topography maps and trial timing diagram). |
-| [Report.pdf](https://www.google.com/search?q=./Report.pdf) | Reference methodology summary in Persian by the competition-winning team (*Team Misagh*: Saeed Akhavan and Samaneh Esmaeili). |
+| [codes/Filter.m](./codes/Filter.m) | Vectorized temporal bandpass filter function applying a 7th-order digital Butterworth bandpass filter (`butter`, `zp2sos`, `sosfilt`) along the time dimension (dimension 2) at $f_s = 2400\ \mathrm{Hz}$. |
+| [codes/Train.m](./codes/Train.m) | Binary training function implementing 3D tensor mean removal, trial-averaged spatial covariance estimation (`pagemtimes`, `pagetranspose`), GEVD-based Common Spatial Patterns (`W_csp`), variance feature extraction, and GEVD-based Fisher LDA (`W_lda`, `thr`, `rule`). |
+| [codes/Test.m](./codes/Test.m) | Hierarchical three-stage decision-tree evaluation function that cascades Classifiers 1, 2, and 3 on multi-trial 3D EEG tensors and accumulates the $4 \times 4$ confusion matrix via `sub2ind` and `accumarray`. |
+| [codes/Label.m](./codes/Label.m) | Binary decision helper function that maps 1D LDA projections to class labels (`sectionNum + 1` vs. `1`) based on the midpoint threshold `thr` and mean ordering flag `rule`. |
+| [codes/subj1.m](./codes/subj1.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 1 (`filtersNum = 2`, bands `[20 35]`, `[0.1 17]`, `[0.1 4]` Hz). |
+| [codes/subj2.m](./codes/subj2.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 2 (`filtersNum = 4`, bands `[20 45]`, `[3 15]`, `[0.1 2]` Hz). |
+| [codes/subj3.m](./codes/subj3.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 3 (`filtersNum = 2`, bands `[20 40]`, `[0.1 10]`, `[0.1 3.6]` Hz). |
+| [codes/subj4.m](./codes/subj4.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 4 (`filtersNum = 2`, bands `[20 40]`, `[11 45]`, `[0.1 6]` Hz). |
+| [codes/subj5.m](./codes/subj5.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 5 (`filtersNum = 3`, bands `[20 40]`, `[13 19]`, `[1 6]` Hz). |
+| [codes/subj6.m](./codes/subj6.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 6 (`filtersNum = 3`, bands `[20 35]`, `[10 17]`, `[0.1 7]` Hz). |
+| [codes/subj7.m](./codes/subj7.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 7 (`filtersNum = 3`, bands `[20 45]`, `[11 16]`, `[1 8]` Hz). |
+| [codes/subj8.m](./codes/subj8.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 8 (`filtersNum = 4`, bands `[25 50]`, `[10 35]`, `[1 17]` Hz). |
+| [codes/subj9.m](./codes/subj9.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 9 (`filtersNum = 4`, bands `[20 40]`, `[10 19]`, `[1 8]` Hz). |
+| [codes/subj10.m](./codes/subj10.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 10 (`filtersNum = 4` in script / `3` in final report, bands `[20 40]`, `[10 45]`/`[10 40]`, `[2 5]` Hz). |
+| [codes/subj11.m](./codes/subj11.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 11 (`filtersNum = 4`, bands `[20 45]`, `[11 17]`, `[1 4]` Hz). |
+| [codes/subj12.m](./codes/subj12.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 12 (`filtersNum = 2`, bands `[20 40]`, `[5 20]`, `[0.1 2]` Hz). |
+| [codes/subj13.m](./codes/subj13.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 13 (`filtersNum = 5`, bands `[12 30]`, `[25 40]`, `[1 15]` Hz). |
+| [codes/subj14.m](./codes/subj14.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 14 (`filtersNum = 3`, bands `[19 35]`, `[6 18]`, `[5 9]` Hz). |
+| [codes/subj15.m](./codes/subj15.m) | Main LOOCV training, testing, and confusion-matrix evaluation script for Subject 15 (`filtersNum = 2`, bands `[20 35]`, `[10 50]`, `[0.1 6]` Hz). |
+| [codes/unused functions/Concat.m](./codes/unused%2520functions/Concat.m) | Legacy helper function for concatenating cell-array tensors along the 3rd dimension (superseded by MATLAB's built-in `cat(3, ...)` after `tic`/`toc` benchmarking). |
+| [codes/unused functions/Filter.m](./codes/unused%20functions/Filter.m) | Legacy FFT-based ideal brick-wall bandpass filter (`fft`, `fftshift`, `ifftshift`, `ifft`) over channel and trial loops (superseded by the $2\times$ faster vectorized Butterworth filter in `codes/Filter.m`). |
+| [BSS\_Project\_810100205\_Arman\_Majidi.pdf](./BSS_Project_810100205_Arman_Majidi.pdf) | Submitted 33-page Persian project report containing function descriptions, the hierarchical tree diagram, CSP and LDA mathematical derivations, and 4-stage hyperparameter tuning logs and confusion matrices for all 15 subjects. |
+| [project.pdf](./project.pdf) | Original course final project assignment sheet in Persian. |
+| [Recording.pdf](./Recording.pdf) | Official signal acquisition and experimental protocol documentation for the 2nd Iranian National BCI Competition dataset in Persian (including 63-channel scalp topography maps and trial timing diagram). |
+| [Report.pdf](./Report.pdf) | Reference methodology summary in Persian by the competition-winning team (*Team Misagh*: Saeed Akhavan and Samaneh Esmaeili). |
 | `README.md` | Self-contained English problem statement, recording protocol specification, mathematical derivations, algorithm architecture, complete 15-subject numerical results, and usage guide. |
 
 *(Note: The raw EEG data files `subj_1.mat` through `subj_15.mat`, distributed separately in the course `dataset` folder due to file size, should be placed inside `codes/` or on the MATLAB path before running `subj1.m`–`subj15.m`.)*
@@ -243,7 +243,7 @@ which retains the first $m$ columns (`1:num`) and the last $m + 2$ columns (`end
 
 #### 1. Spatial Projection and Variance Features
 
-Projecting every $63 \times 7200$ trial $X_t^{(i)}$ ($i \in \{1, 2\}$, $t = 1, \dots, N_i$) onto $W_{\mathrm{csp}}^T \in \mathbb{R}^{d \times 63}$ via `pagemtimes(W_csp.', ...)` and computing the sample variance along the time dimension (`var(..., 0, 2)`) compresses each multi-channel EEG trial into a $d \times 1$ feature vector $x^{(i)}(t) \in \mathbb{R}^{d \times 1}$ (`Train.m` lines 13–18):
+Projecting every $63 \times 7200$ trial $X_t^{(i)}$ ($i \in \{1, 2\}$, $t = 1, \dots, N_i$) onto $W_{\mathrm{csp}}^T \in \mathbb{R}^{d \times 63}$ via `pagemtimes(W_csp.', ...)` and computing the sample variance along the time dimension (`var(..., 0, 2)`) compresses each multi-channel EEG trial into a $d \times 1$ feature vector $`x^{(i)}(t) \in \mathbb{R}^{d \times 1}`$ (`Train.m` lines 13–18):
 
 ```math
 Z_t^{(i)} = W_{\mathrm{csp}}^T X_t^{(i)} \in \mathbb{R}^{d \times 7200},
@@ -253,7 +253,7 @@ x_k^{(i)}(t) = \mathrm{Var}\!\left(Z_t^{(i)}(k, :)\right), \quad k = 1, \dots, d
 
 #### 2. Fisher Linear Discriminant Analysis (LDA) via GEVD
 
-Let $\mu_1, \mu_2 \in \mathbb{R}^{d \times 1}$ and $\Sigma_1, \Sigma_2 \in \mathbb{R}^{d \times d}$ denote the sample mean vectors and within-class covariance matrices of the feature vectors $\left\{x^{(i)}(t)\right\}_{t=1}^{N_i}$ for the two binary groups (Page 3 of the Persian report and `Train.m` lines 19–22):
+Let $\mu_1, \mu_2 \in \mathbb{R}^{d \times 1}$ and $\Sigma_1, \Sigma_2 \in \mathbb{R}^{d \times d}$ denote the sample mean vectors and within-class covariance matrices of the feature vectors $`\left\{x^{(i)}(t)\right\}_{t=1}^{N_i}`$ for the two binary groups (Page 3 of the Persian report and `Train.m` lines 19–22):
 
 ```math
 \begin{aligned}
@@ -1120,9 +1120,9 @@ Test Confusion Matrix:
 
 ### 6.3 Reading the Theoretical Derivations and Report
 
-1. Use **Section 3** for the complete English translation of the final project sheet ([project.pdf](https://www.google.com/search?q=./project.pdf)), the 63-channel EEG recording protocol ([Recording.pdf](https://www.google.com/search?q=./Recording.pdf)), and the reference competition report ([Report.pdf](https://www.google.com/search?q=./Report.pdf)).
+1. Use **Section 3** for the complete English translation of the final project sheet ([project.pdf](./project.pdf)), the 63-channel EEG recording protocol ([Recording.pdf](./Recording.pdf)), and the reference competition report ([Report.pdf](./Report.pdf)).
 2. Use **Section 4** for the mathematical derivations of the 3-stage binary tree, Butterworth bandpass filtering, Common Spatial Patterns (CSP), and Fisher LDA.
-3. Use **Section 5** to inspect the master 15-subject summary table, the complete 4-stage hyperparameter tuning logs and confusion matrices for Subjects 1–15, and the implementation notes alongside the original Persian report [BSS\_Project\_810100205\_Arman\_Majidi.pdf](https://www.google.com/search?q=./BSS_Project_810100205_Arman_Majidi.pdf).
+3. Use **Section 5** to inspect the master 15-subject summary table, the complete 4-stage hyperparameter tuning logs and confusion matrices for Subjects 1–15, and the implementation notes alongside the original Persian report [BSS\_Project\_810100205\_Arman\_Majidi.pdf](./BSS_Project_810100205_Arman_Majidi.pdf).
 
 ## 7. References
 
